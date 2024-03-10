@@ -6,16 +6,18 @@ import './styles.css';
 export function Transit({ children, to }: ILinkProps): ReactElement {
   const { navigate } = usePages();
 
-  const handleClick: MouseEventHandler<HTMLButtonElement> = () => {
+  const handleClick: MouseEventHandler<HTMLAnchorElement> = (e) => {
+    e.preventDefault();
     navigate(to);
   };
 
   return (
-    <button
-      className="button"
+    <a
+      className="link"
+      href={to}
       onClick={handleClick}
     >
       {children}
-    </button>
+    </a>
   );
 }
