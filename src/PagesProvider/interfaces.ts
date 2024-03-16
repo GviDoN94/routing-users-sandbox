@@ -1,18 +1,20 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export interface IPage {
-	name: string;
+  name: string;
+  search: string;
 }
 
 export interface IPageProvider extends IPage {
-	navigate: (name: string) => void;
+  navigate: (name: string) => void;
+  setSearchParam: (key: string, value: string) => void;
 }
 
 export interface IPageProviderProps {
-	children: ReactNode;
+  children: ReactNode;
 }
 
 export interface ILinkProps {
-	to: string;
-	children: ReactNode;
+  to: string;
+  children: ReactNode;
 }
