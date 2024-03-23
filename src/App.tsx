@@ -1,7 +1,5 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import { MainPage } from '@/pages/MainPage';
-import { UsersPage } from '@/pages/UsersPage';
-import { UserInfoPage } from '@/pages/UserInfoPage';
+import { MainPage, UsersPage, UserInfoPage } from '@/pages';
 import './app.css';
 
 export function App() {
