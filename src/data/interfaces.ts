@@ -5,6 +5,7 @@ export interface IUser {
   jobTitle: string;
   avatar: string;
   bio: string;
+  playlist?: TPlaylist;
 }
 
 interface IPlaylistFull {

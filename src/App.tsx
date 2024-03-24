@@ -1,5 +1,5 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import { MainPage, UsersPage, UserInfoPage } from '@/pages';
+import { MainPage, UsersPage, UserInfoPage, PlaylistsPage } from '@/pages';
 import './app.css';
 
 export function App() {
@@ -11,6 +11,7 @@ export function App() {
         <nav className="navMenu">
           <Link to={'/'}>Главная</Link>
           <Link to={'/users'}>Пользователи</Link>
+          <Link to={'/playlists'}>Плейлисты</Link>
         </nav>
 
         <main className="content">
@@ -26,6 +27,10 @@ export function App() {
             <Route
               path="/users/:userId"
               element={<UserInfoPage />}
+            />
+            <Route
+              path="/playlists"
+              element={<PlaylistsPage />}
             />
           </Routes>
         </main>
