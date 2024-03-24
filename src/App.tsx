@@ -1,5 +1,11 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import { MainPage, UsersPage, UserInfoPage, PlaylistsPage } from '@/pages';
+import {
+  MainPage,
+  UsersPage,
+  UserInfoPage,
+  PlaylistsPage,
+  PlaylistsInfoPage,
+} from '@/pages';
 import './app.css';
 
 export function App() {
@@ -31,6 +37,10 @@ export function App() {
             <Route
               path="/playlists"
               element={<PlaylistsPage />}
+            />
+            <Route
+              path="/playlists/:playlistId"
+              element={<PlaylistsInfoPage />}
             />
           </Routes>
         </main>

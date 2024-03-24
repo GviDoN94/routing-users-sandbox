@@ -11,7 +11,7 @@ export function UserInfoPage() {
       <div className="userInfoPage">
         <h2>UserInfoPage</h2>
 
-        <div className="users">
+        <div className="user">
           <p>Пользоватвеля с таким ID нет</p>
         </div>
       </div>
@@ -22,7 +22,7 @@ export function UserInfoPage() {
     <div className="userInfoPage">
       <h2>UserInfoPage</h2>
 
-      <div className="users">
+      <div className="user">
         <p>{user.jobTitle}</p>
         <p>{user.email}</p>
         <img
